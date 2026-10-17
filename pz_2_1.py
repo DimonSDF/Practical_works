@@ -13,8 +13,9 @@ while True:
         elif sec > 86400:
             raise ValueError("Кол-во секунд не может быть больше, чем есть в сутках")
             
-        hours = compute_hours(sec)
-        print(f"Прошло полных часов: {hours}.")
-        break
     except ValueError as e:
         print(f"Ошибка ввода: {e}. Попробуйте ещё раз.")
+        
+    hours = compute_hours(sec)
+    print(f"Прошло полных часов: {hours}.")
+    break
